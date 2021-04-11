@@ -1,0 +1,6 @@
+numpy
+pandas
+torch == 1.8.0+cu111
+scikit-learn
+
+--find-links https://download.pytorch.org/whl/torch_stable.html
