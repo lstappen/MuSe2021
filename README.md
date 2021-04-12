@@ -83,7 +83,7 @@ We have a bunch of papers you can cite related to this baseline libary:
 
 MuSe2021 - preprint:
 ```bibtex
-@inproceedings{stappen2020muse,
+@inproceedings{stappen2021muse,
   title={The MuSe 2021 Multimodal Sentiment Analysis Challenge: Sentiment, Emotion, Physiological-Emotion, and Stress},
   author={Stappen, Lukas and Baird, Alice and Christ, Lukas and Schumann, Lea and Sertolli, Benjamin and Messner, Eva-Maria and Cambria, Erik and Zhao, Guoying and Schuller, Bjoern W},
   booktitle={Proceedings of the 2nd International Multimodal Sentiment Analysis Challenge and Workshop},
