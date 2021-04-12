@@ -17,9 +17,6 @@ For this years’ challenge, we utilise the **MuSe-CaR** dataset focusing on use
 ## Installation 
 Create a virtenv; check and install packages in requirements.txt; download the data; adjust paths in `config.py`; run sample calls. 
 
-See main.py for more argparser options. 
-Set option `--predict` for masked test labels. The predictions for all samples in the test partition are saved in csv files. 
-
 ## Run: Sample calls for each sub-challenges 
 
 ### MuSe-Wilder:
@@ -52,6 +49,30 @@ Set `--save` in the above calls to save predictions for data samples of all part
 ```
 python late_fusion.py --task wilder --emo_dim valence --preds_path preds --d_rnn 32 --rnn_n_layers 2 --epochs 20 --batch_size 64 --lr 0.001 --n_seeds 5 --win_len 200 --hop_len 100 --use_gpu --predict
 ```
+
+## Settings
+See main.py for more argparser options. 
+#### GPU:
+`--use_gpu`: We highly recommend to execute the training on a GPU machine. This moves the tensors and models to cuda in Pytorch. 
+
+#### Data segmentation:
+`--win_len X`: Specify the window length for each segment.<br />
+`--hop_len X`: Specify the hop length for each segment.<br />
+
+#### Normalisation:
+`--normalize`: Specify if any features should be normalized. <br />
+`--norm_opts y,n`: In case for early fusion. Specify which feature in the list has to be normalised ("y": yes, "n": no) in the corresponding order to the feature_set.<br />
+
+#### Training:
+`--n_seeds 5`: Specify number of random seeds to try for the hyperparameters (same settings, multiple runs). This helps to rule out a bad local minima but increases computation by factor of X n_seeds.<br />
+`--cache`: Training can be done faster if the pre-processed data is kept. If you add new features, remove the chached data! The same applies to data augmentation before the data pipeline.<br />
+
+#### Early fusion:
+Just adding multiple features in the feature_set parameter like `--feature_set vggface bert vggface`. Our late fusion results were superior to the early fusion with this network architecture. Therefore, only late fusion is reported. However, nothing wrong with testing early fusion more comprehensively.:)
+
+#### Late fusion:
+Set option `--predict` for masked test labels. The predictions for all samples in the test partition are saved in csv files. 
+
 
 ## Reproducibility 
 We cannot guarantee perfectly reproducible results even when you use identical seeds due to changing initializations across PyTorch releases, CPU/GPU use, or different platforms (see https://pytorch.org/docs/stable/notes/randomness.html). However, we did our best and added every gadget that improved reproducibility and did not dramatically slow down training performance. Using the HP in the paper, you will come into the same result cooridor. Furthermore, many weights of the best models can be found here: https://drive.google.com/drive/folders/14mKL4uxRTGeK16ViDFYNgxfOdI27hEBa?usp=sharing
