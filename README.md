@@ -10,7 +10,7 @@ Our baseline results on test are: <br />
 * **MuSe-Stress** CCC: **.5058** for valence based on VGGface features; CCC: **.4474** for arousal based one GeMAPS features <br />
 * **MuSe-Physio** CCC: **.4606** for physiological-emotion prediction <br />
 
-<a href="https://drive.google.com/file/d/1dKeJL-HyPxsUvAsetJs2VCPsL5OPXzpg/view">Details</a>
+<a href="https://www.researchgate.net/publication/350874530_The_MuSe_2021_Multimodal_Sentiment_Analysis_Challenge_Sentiment_Emotion_Physiological-Emotion_and_Stress">Details</a>
 
 For this years’ challenge, we utilise the **MuSe-CaR** dataset focusing on user-generated reviews and introduce the **Ulm-TSST** dataset, which displays people in stressful depositions. 
 
