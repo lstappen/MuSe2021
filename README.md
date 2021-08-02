@@ -93,11 +93,19 @@ MuSe2021 - preprint:
 
 Dataset:
 ```bibtex
-@article{stappen2021multimodal,
-  title={The Multimodal Sentiment Analysis in Car Reviews (MuSe-CaR) Dataset: Collection, Insights and Improvements},
-  author={Stappen, Lukas and Baird, Alice and Schumann, Lea and Schuller, Bj{\"o}rn},
-  journal={arXiv preprint arXiv:2101.06053},
-  year={2021}
+@article{stappen2020dataset,
+	title        = {The Multimodal Sentiment Analysis in Car Reviews (MuSe-CaR) Dataset: Collection, Insights and Improvements},
+	author       = {Lukas Stappen and Alice Baird and Lea Schumann and Björn Schuller},
+	year         = 2021,
+	month        = {06},
+	journal      = {IEEE Transactions on Affective Computing},
+	publisher    = {IEEE Computer Society},
+	address      = {Los Alamitos, CA, USA},
+	number       = {01},
+	pages        = {1--16},
+	doi          = {10.1109/TAFFC.2021.3097002},
+	issn         = {1949-3045},
+	keywords     = {sentiment analysis;annotations;task analysis;databases;affective computing;social networking (online);computational modeling}
 }
 ```
 
@@ -124,3 +132,5 @@ We were inspired by our last year's baseline models (https://github.com/lstappen
 <a href="https://github.com/aliceebaird"><img src="https://avatars.githubusercontent.com/u/10690171?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alice</b></sub></a><br />
   </tr>
 </table>
+
+If you like what you see, please leave us a ✨!
