@@ -121,7 +121,7 @@ MuSe2020:
 ```
 
 ## Acknowledgement & Contributors ✨ : 
-We were inspired by our last year's baseline models (https://github.com/lstappen/MuSe2020) and some of winners to create this baseline code. Thanks to all who contributed, especially:
+We were inspired by our last year's baseline models (https://github.com/lstappen/MuSe2020) and some of the winners to create this baseline code. Thanks to all who contributed, especially:
 
 <table>
   <tr>
